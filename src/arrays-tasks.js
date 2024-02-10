@@ -569,7 +569,7 @@ function swapHeadAndTail(arr) {
   const body = arr.slice(Math.floor(arr.length / 2), Math.ceil(arr.length / 2));
   const tail = arr.slice(Math.ceil(arr.length / 2));
 
-  return tail.concat(body).concat(head);
+  return tail.concat(body, head);
 }
 
 module.exports = {
